@@ -1,0 +1,21 @@
+body{
+    background-color: #FFFACD;
+}
+
+/* Custom styles for logo overlay */
+#logo-overlay {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: auto; /* Center the logo horizontally */
+    text-align: center; /* Center the logo horizontally */
+    z-index: 9999;
+  }
+  
+  /* Adjust the size of the logo if needed */
+  #logo-overlay img {
+    width: 15%; 
+    max-width: 220px;
+    height: auto;
+  }
