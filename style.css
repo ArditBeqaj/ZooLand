@@ -1,5 +1,8 @@
 body{
     background-color: #FFFACD;
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-style: normal;
 }
 
 /* Custom styles for logo overlay */
@@ -54,3 +57,19 @@ body{
   top: 0;
   background: linear-gradient(to top, rgba(0,0,0,0),#FFFACD);
 }
+
+
+
+
+/* Style for the welcome header */
+#welcome-header {
+  font-size: 8vh;
+  color: #000000; /* Adjust the font color as needed */
+  text-align: center;
+  margin-top: 7%;
+  transform: translateY(-50%);
+}
+
+
+
+
