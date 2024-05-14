@@ -102,6 +102,18 @@ body{
   object-fit: cover; /* Make the image cover the entire space while maintaining aspect ratio */
   transition: filter 0.3s;
 }
+.card:hover .card-overlay {
+  opacity: 1;
+}
+.card-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.card-img:hover img {
+  filter: blur(5px);
+}
 
 
 
