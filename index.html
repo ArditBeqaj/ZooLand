@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zoo Website</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/card.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -40,45 +43,48 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  
 
   <div id="welcome-header" class="hidden">Welcome to Zoo Land</div>
 
 
-  <div class="container-fluid">
+  <div class="container-xl">
     <div class="row justify-content-center">
-      <div class="col-md-11">
-        <div class="card">
-          <div class="card-img">
-            <img src="img/insect.webp" alt="Image 1">
+      <div class="col-md-12">
+        <div class="card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+          <div class="card-content">
+            <div class="card-img">
+              <img src="img/insect.webp" alt="Image 1">
+            </div>
+            <div class="card-overlay">
+              <!-- Initial title (initially centered in the middle) -->
+              <div class="initial-title text-center">
+                <h5 class="card-title">Insects</h5>
+              </div>
+              <!-- Description and See More button (initially hidden) -->
+              <div class="description hidden">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <p class="card-description">
+                      Insects, a class within the vast kingdom of animals, represent one of the most diverse and abundant groups on Earth.
+                      With over a million documented species, insects dominate terrestrial ecosystems, playing pivotal roles in numerous ecological processes.
+                      Their evolutionary success can be attributed to their remarkable adaptability, occupying a wide range of habitats, from lush rainforests to barren deserts.
+                      Despite their diminutive size, insects wield immense ecological significance, serving as pollinators, decomposers, and prey for countless organisms.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 d-flex justify-content-center">
+                    <button class="see-more-button"><a class="SeeButton" href="birds.html">SEE MORE</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card-overlay">
-            <h5 class="card-title">Insects</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-11">
-        <div class="card">
-          <div class="card-img">
-            <img src="img/parrot.jpg" alt="Image 2">
-          </div>
-          <div class="card-overlay">
-            <h5 class="card-title">Birds</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-11">
-        <div class="card">
-          <div class="card-img">
-            <img src="img/elephant.webp" alt="Image 3">
-          </div>
-          <div class="card-overlay">
-            <h5 class="card-title">Mammals</h5>
-          </div>
-        </div>
+        </div> 
       </div>
     </div>
   </div>
-
 
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
