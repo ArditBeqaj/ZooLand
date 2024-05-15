@@ -1,0 +1,57 @@
+body{
+  background-color: #FFFACD;
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Custom styles for logo overlay */
+#logo-overlay {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: auto; /* Center the logo horizontally */
+  text-align: center; /* Center the logo horizontally */
+  z-index: 9999;
+}
+
+/* Adjust the size of the logo if needed */
+#logo-overlay img {
+  width: 15%; 
+  max-width: 220px;
+  height: auto;
+}
+/* Hide the welcome header by default */
+.hidden {
+opacity: 0;
+transition: opacity 0.5s ease;
+}
+
+/* Show the welcome header when it becomes visible */
+.visible {
+opacity: 1;
+}
+
+/* Style for the welcome header */
+#welcome-header {
+font-size: 8vh;
+color: #000000; /* Adjust the font color as needed */
+text-align: center;
+margin-top: 7%;
+transform: translateY(-50%);
+}
+
+@media (max-width: 830px) {
+  #welcome-header{
+    font-size: 5vh;
+  }
+  }
+@media (max-width: 430px) {
+  #welcome-header{
+    font-size: 4vh;
+  }
+  }  
+
+  
+  
