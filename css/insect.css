@@ -125,3 +125,18 @@ body {
 .hexagon:hover .hover-text {
     opacity: 1; /* Show the text on hover */
 }
+#animation-container img {
+    transition: all 2s;
+}
+
+@keyframes move-bee {
+0% { left: 10%; top: 60%; } /* Start from the middle-left */
+50% { left: 80%; top: 60%; } /* Move to the middle */
+100% { left: 50%; top: 30%; } /* Move to the top */
+}
+
+
+#animated-bee.animate {
+    animation: move-bee 4s linear;
+}
+
