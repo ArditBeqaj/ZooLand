@@ -25,19 +25,3 @@ function isInViewport(element) {
   
   // Add scroll event listener
   window.addEventListener('scroll', handleScroll);
-
-
-let timeout;
-
-function showDescription(card) {
-  timeout = setTimeout(function() {
-    const description = card.querySelector('.description');
-    description.classList.remove('hidden');
-  }, 3000);
-}
-
-function hideDescription(card) {
-  clearTimeout(timeout);
-  const description = card.querySelector('.description');
-  description.classList.add('hidden');
-}
