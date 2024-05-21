@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+     //--------------------Bee ANIMATIONS-------------------------------- //
     const hive = document.getElementById('hive');
     const hexagonContainer = document.getElementById('hexagon-container');
     const hiveContainer = document.getElementById('hive-container');
-    const cardTitle = document.querySelector('.card-title');
+    const cardTitle = document.querySelector('.bee-title');
     const buzzSound = document.getElementById('buzz-sound');
     const workerBee = document.getElementById('worker-bee');
     const animationContainer = document.getElementById('animation-container');
@@ -10,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const honey = document.getElementById('honey');
     const queenBee = document.querySelector('.hexagon img[alt="Queen Bee"]');
     const hexagons = document.querySelectorAll('.hexagon');
+    
 
     let queenClickCount = 0;
 
@@ -82,6 +85,58 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'index.html';
         }
     });
+     //--------------------Bee ANIMATIONS-------------------------------- //
+     
 
-   
+
+    //--------------------Butterfly ANIMATIONS-------------------------------- //
+    const butterflyTitle = document.querySelector('#butterfly .butterfly-title');
+    const butterflyImageContainer = document.getElementById('butterfly-image-container');
+    
+    let img;
+    let originalImageSrc = 'img/butterfly.png'; // Replace with the path to your original image
+    let alternateImageSrc = 'img/flying.gif'; // Replace with the path to your alternate image
+
+
+    butterflyTitle.addEventListener('click', () => {
+        img = document.createElement('img');
+        img.src = originalImageSrc;
+        img.alt = 'Butterfly';
+        img.classList.add('img-fluid'); // Optional: Add Bootstrap class for responsive image
+        img.id = 'butterfly-img';
+        butterflyImageContainer.innerHTML = ''; // Clear any existing content
+        butterflyImageContainer.appendChild(img);
+
+        img.addEventListener('click', () => {
+            img.src = alternateImageSrc;
+            img.style.width = '20%'; // Make the alternate image smaller
+            img.style.height = 'auto'; // Maintain aspect ratio
+            animateImage();
+        });
+    });
+
+    function animateImage() {
+        img.style.position = 'absolute';
+        img.style.transition = 'transform 0.5s ease';
+
+        let animationDuration = 3000; // 3 seconds
+        let animationInterval = 500; // Interval for random movements
+
+        let interval = setInterval(() => {
+            let randomX = Math.random() * (butterflyImageContainer.clientWidth - img.clientWidth);
+            let randomY = Math.random() * (butterflyImageContainer.clientHeight - img.clientHeight);
+            img.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        }, animationInterval);
+
+        setTimeout(() => {
+            clearInterval(interval);
+            img.style.transform = 'translate(0, 0)'; // Move back to the original position
+            img.src = originalImageSrc; // Switch back to the original image
+            img.style.height = '300px'; // Reset size to original
+            img.style.width = 'auto';
+        }, animationDuration);
+    }
+     //--------------------Butterfly ANIMATIONS-------------------------------- //
 });
+
+
