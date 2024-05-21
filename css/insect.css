@@ -14,16 +14,20 @@ body {
     font-size: 5rem;
     background-color: hsl(54, 100%, 85%);
 }
-  
-.card{
+
+.bc{
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../img/b.jpg') center/cover;
     background-color: hsla(54, 100%, 90%, 0.559);
     background-position: center; /* Image will be centered */
+}
+  
+.card{
+   
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
 }
   
-.card-title {
+.bee-title {
     font-family: "Sriracha", cursive;
     font-size: 2.5rem;
     color: #343a40;
@@ -139,4 +143,42 @@ body {
 #animated-bee.animate {
     animation: move-bee 4s linear;
 }
+
+
+.bc2{
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/sky.jpg') center/cover;
+    background-position: center; /* Image will be centered */
+}
+
+.butterfly-title:hover {
+    transform: scale(1.1); /* Makes the image 10% larger on hover */
+    transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+}
+
+
+#butterfly{
+    cursor: pointer;
+}
+#butterfly-image-container {
+    position: relative;
+    overflow: visible; /* Ensures the image stays within the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#butterfly-img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    transform-origin: center; /* Ensures the image transforms from its center */
+}
+
+#butterfly-img:hover {
+    transform: scale(1.1); /* Makes the image 10% larger on hover */
+    transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+}
+
+
+
 
