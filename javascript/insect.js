@@ -137,6 +137,55 @@ document.addEventListener('DOMContentLoaded', () => {
         }, animationDuration);
     }
      //--------------------Butterfly ANIMATIONS-------------------------------- //
+
+
+
+//--------------------Cricket ANIMATIONS-------------------------------- //
+
+
+    
+
+//--------------------Cricket ANIMATIONS-------------------------------- //
+
+
+
+
+//--------------------Firefly ANIMATIONS-------------------------------- //
+const fireflyTitle = document.querySelector('.firefly-title');
+    const fireflyContainer = document.getElementById('firefly');
+
+    // Function to generate a random number between min and max
+    function getRandomNumber(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    // Function to make the title pop up and disappear
+    function makeFireflyEffect() {
+        // Generate random position within the container
+        const randomX = getRandomNumber(0, fireflyContainer.offsetWidth - fireflyTitle.offsetWidth);
+        const randomY = getRandomNumber(0, fireflyContainer.offsetHeight - fireflyTitle.offsetHeight);
+
+        // Set the position of the title
+        fireflyTitle.style.left = randomX + 'px';
+        fireflyTitle.style.top = randomY + 'px';
+
+        // Make the title appear
+        fireflyTitle.style.opacity = 1;
+
+        // Make the title shine for a brief moment
+        setTimeout(() => {
+            fireflyTitle.style.opacity = 0;
+        }, 500); // Adjust the duration as needed
+
+        // Repeat after a short delay
+        setTimeout(makeFireflyEffect, getRandomNumber(1000, 3000)); // Adjust the delay between appearances
+    }
+
+    // Start the firefly effect
+    makeFireflyEffect();
+
+//--------------------Firefly ANIMATIONS-------------------------------- //
+
 });
 
 
