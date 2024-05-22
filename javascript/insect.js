@@ -141,7 +141,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //--------------------Cricket ANIMATIONS-------------------------------- //
+const cricketImg = document.getElementById('cricket-img');
+     const cricketAudio = document.getElementById('cricket-audio');
 
+     cricketImg.addEventListener('click', () => {
+         // Move the image up by 50 pixels
+         cricketAudio.play();
+         cricketImg.style.transform = 'translateY(-200px)';
+
+
+         // Reset the position after a short delay (for animation effect)
+         setTimeout(() => {
+             cricketImg.style.transform = 'translateY(0)';
+         }, 500); // Adjust the delay as needed for desired animation speed
+     });
 
     
 
