@@ -223,6 +223,11 @@ body {
     transform: translateY(-100px); 
 }
 
+.bc4{
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('../img/ground.jpg') center/cover;
+    background-position: center; /* Image will be centered */
+}
+
 
 
 
