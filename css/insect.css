@@ -203,6 +203,26 @@ body {
     transition: opacity 0.5s ease; /* Add transition for smooth appearance */
 }
 
+#cricket .card {
+    height: 400px;
+}
+
+#cricket .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+#cricket #cricket-img {
+    cursor: pointer;
+    transition: transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+}
+
+#cricket #cricket-img.clicked {
+    transform: translateY(-100px); 
+}
+
 
 
 
