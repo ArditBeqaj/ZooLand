@@ -181,4 +181,31 @@ body {
 
 
 
+#firefly .card {
+    height: 400px; /* Adjust the height as needed */
+}
+
+.bc3{
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('../img/firefly.gif') center/cover;
+    background-position: center; /* Image will be centered */
+}
+
+#firefly {
+    position: relative;
+    overflow: hidden; /* Ensure the card doesn't show content outside its boundaries */
+}
+
+.firefly-title {
+    font-size: 4rem;
+    color: #ECA32F;
+    position: absolute;
+    opacity: 0; /* Start with the element hidden */
+    transition: opacity 0.5s ease; /* Add transition for smooth appearance */
+}
+
+
+
+
+
+
 
