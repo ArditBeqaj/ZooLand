@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function animateImage() {
         img.style.position = 'absolute';
-        img.style.transition = 'transform 0.5s ease';
+        img.style.transition = 'transform 0.9s ease';
 
         let animationDuration = 3000; // 3 seconds
         let animationInterval = 500; // Interval for random movements
