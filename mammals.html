@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mammals</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mammals.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poetsen+One&family=Salsa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="text-center mb-4 title">
+        Mammals
+    </div>
+    <div class="container my-3">
+        <div class="row">
+
+             <!-- Lion Section -->
+                    <div class="col-md-6 mb-4" id="lion">
+                        <div class="card">
+                            <h2 class="card-title text-center">Lion</h2>
+                            <div class="card-body d-flex">
+                                <img src="img/lion-card.jpg" alt="Lion" onclick="playAudio('lion-audio')">
+                                <audio id="lion-audio" src="video/Lion's Roar Sound Effect.mp3"></audio>
+                                <div>
+                                    <p>The lion (Panthera leo) is a large carnivorous feline known for its majestic appearance and social behavior. Native to Africa and a small population in India, lions live in groups called prides. Males are distinguished by their prominent manes, which vary in color from blond to black. Lions are apex predators and play a crucial role in their ecosystems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Lion Section -->
+
+                    <!-- Elephant Section -->
+                    <div class="col-md-6" id="elephant">
+                        <div class="card">
+                            <h2 class="card-title text-center">Elephant</h2>
+                            <div class="card-body d-flex">
+                                <img src="img/elephant.jpg" alt="Elephant" onclick="playAudio('elephant-audio')">
+                                <audio id="elephant-audio" src="video/ELEPHANT - Sound Effect.mp3"></audio>
+                                <div>
+                                    <p>The elephant is the largest land animal, with males reaching up to 13 feet in height and weighing up to 14,000 pounds. They are known for their long trunks, large ears, and tusks, which are actually elongated incisor teeth. Elephants are herbivores and play a crucial role in shaping their ecosystems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Elephant Section -->
+
+                    <!-- Cheetah Section -->
+                    <div class="container">
+                        <div class="col-md-12" id="cheetah">
+                            <div class="card" style="background-color: #fcf7e9;">
+                                <h2 class="card-title cheetah text-center">Catch the Cheetah</h2>
+                                <audio id="cheetah-audio" src="video/Cheetah - Sound Effect  ProSounds.mp3"></audio>
+                                <div class="card-body-cheetah">
+                                    <img src="img/cheetah.gif" alt="Cheetah" class="cheetah-animation active no-hover" style="width: 20%;">
+                                    <img src="img/cheetah.webp" alt="Cheetah" style="width: 50%; height: auto; margin-right: 15px; border-radius: 15px; object-fit: cover;" class="cheetah-img"  onclick="playAudio('cheetah-audio')">
+                                    <div class="content">
+                                        <p>The cheetah (<em>Acinonyx jubatus</em>) is a large cat known for its incredible speed, capable of reaching 60 to 70 miles per hour in short bursts covering distances up to 500 meters, and has the ability to accelerate from 0 to 60 miles per hour in just a few seconds. Native to Africa and central Iran, the cheetah's slender, long-legged body is built for speed. It is an apex predator in its environment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                 </div>
+                </div>               
+            </div>        
+        </div>        
+    </div>
+
+    <footer
+      class="bg-body-tertiary text-center mt-5"
+      style="background-color: rgba(0, 0, 0, 0.03)"
+    >
+      <div class="container p-3 pb-0">
+        <section>
+          <!-- Facebook -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: #000000"
+            href="#!"
+            role="button"
+            ><i class="bi bi-facebook"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: black"
+            href="#!"
+            role="button"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: black"
+            href="#!"
+            role="button"
+            ><i class="bi bi-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            data-mdb-ripple-init
+            class="btn text-white btn-floating m-1"
+            style="background-color: black"
+            href="#!"
+            role="button"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </section>
+      </div>
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        2024 Copyright©
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javascript/mammals.js"></script>
+</body>
+</html>
