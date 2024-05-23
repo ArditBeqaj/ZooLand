@@ -1,0 +1,84 @@
+body {
+    background-color: #faf7df90;
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.title{
+    font-size: 5rem;
+    background-color: rgba(0, 0, 0, 0.05)
+}
+.card {
+    height: 400px;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+img {
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; Add transition property */
+    cursor: pointer;
+}
+/* img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  
+} */
+
+.card-body {
+    display: flex;
+    padding: 20px;
+    background-color: #fcf7e9; /* Neutral accent color */
+}
+.card-body img {
+    border-radius: 15px;
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+    object-fit: cover;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    
+}
+.card-body p {
+    font-size: 16px;
+    color: #6D4C41; /* Warm brown for better readability */
+}
+.card-title {
+    background-color: #ddc8e0; /* Secondary accent color */
+    padding: 15px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000; /* Light color for contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.cheetah-animation {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 1.5s linear;
+    cursor: pointer;
+    width: 10%;
+}
+.hidden {
+    display: none;
+}
+.card-body-cheetah {
+    height: 300px;
+    display: flex;
+    padding: 20px;
+    position: relative;
+}
+.card-body-cheetah img,
+.card-body-cheetah .content {
+    display: none;
+}
+.card-body-cheetah img.active,
+.card-body-cheetah .content.active {
+    display: block;
+}
+.card-body-cheetah .content {
+    margin-left: 20px;
+    
+}
