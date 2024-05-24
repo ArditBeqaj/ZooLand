@@ -26,12 +26,6 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(moveImage, 4000); // Move the image every 4 seconds
 
     moveImage(); // Start the animation immediately
-
-    
-
-
-
-
 });
 
 function playAudio(audioId) {
