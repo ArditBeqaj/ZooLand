@@ -7,6 +7,8 @@
   <title>Mammals</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/mammals.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carousel.css">
   <link
     href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poetsen+One&family=Salsa&display=swap"
     rel="stylesheet">
@@ -17,12 +19,34 @@
 </head>
 
 <body>
-  <div class="text-center mb-4 title">
-    Mammals
-  </div>
-  <div class="container my-3">
-    <div class="row">
 
+  <div id="slideshow" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h1 class="top">Fastest Mammal</h1>
+        <img src="img/cheetah slider.jpg" class="d-block slider-img" alt="Slide 1" />
+      </div>
+      <div class="carousel-item">
+        <h1 class="top">Biggest Mammal</h1>
+        <img src="img/blue whale.jpg" class="d-block" alt="Slide 4" />
+      </div>
+      <div class="carousel-item">
+        <h1 class="top">Strongest Mammal</h1>
+        <img src="img/elephant slider.jpg" class="d-block" alt="Slide 2" />
+      </div>
+      <div class="carousel-item">
+        <h1 class="top">Smartest Mammal</h1>
+        <img src="img/chimpanzee.jpg" class="d-block" alt="Slide 3" />
+      </div>
+    </div>
+  </div>
+
+    <div id="welcome-header" class="">Mammals</div>
+
+
+
+  <div class="container">
+    <div class="row">
       <!-- Lion Section -->
       <div class="col-md-6 mb-4" id="lion">
         <div class="card">
@@ -66,7 +90,7 @@
             <audio id="cheetah-audio" src="video/Cheetah - Sound Effect  ProSounds.mp3"></audio>
             <div class="card-body-cheetah">
               <img src="img/cheetah.gif" alt="Cheetah" class="cheetah-animation active no-hover" style="width: 20%;">
-              <img src="img/cheetah.webp" alt="Cheetah"
+              <img src="img/cheetah slider.jpg" alt="Cheetah"
                 style="width: 50%; height: auto; margin-right: 15px; border-radius: 15px; object-fit: cover;"
                 class="cheetah-img" onclick="playAudio('cheetah-audio')">
               <div class="content">
@@ -120,16 +144,19 @@
     </div>
     <!-- Zebra Section -->
 
+  </div>
+  
+
+
+  
 
 
 
 
 
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
+
+
+
 
   <footer class="bg-body-tertiary text-center mt-5" style="background-color: rgba(0, 0, 0, 0.03)">
     <div class="container p-3 pb-0">
