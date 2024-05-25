@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     cheetahAnimation.addEventListener('click', () => {
         cheetahAnimation.classList.remove('active');
-        cheetahImg.classList.add('hidden');
         cheetahImg.classList.add('active');
         content.classList.add('active');
         cardTitle.textContent = "Cheetah";

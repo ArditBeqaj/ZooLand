@@ -56,7 +56,7 @@ body {
     color: #6D4C41; /* Warm brown for better readability */
 }
 .card-title {
-    background-color: #ddc8e0; /* Secondary accent color */
+    background-color: #c5955b85; /* Secondary accent color */
     padding: 15px;
     margin: 0;
     font-size: 24px;
@@ -73,9 +73,9 @@ body {
     cursor: pointer;
     width: 10%;
 }
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 .card-body-cheetah {
     height: 300px;
     display: flex;
