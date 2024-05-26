@@ -94,3 +94,45 @@ body {
     margin-left: 20px;
     
 }
+
+@media (max-width:1199px) {
+    .card-body img{
+        width: 40%;
+    }
+    .card-body p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:991px) {
+
+    .card-body img{
+        width: 40%;
+    }
+    .card-body p {
+        font-size: 13px;
+    }
+}
+@media (max-width:767px) {
+    .card-body p {
+        font-size: 16px;
+    }
+    .card-body-cheetah{
+        margin-top: 10px;
+    }
+
+    .content{
+        font-size: 13px;
+    }
+}
+@media (max-width:476px) {
+    .card-body p {
+        font-size: 13px;
+    }
+    .card-body-cheetah{
+        margin-top: 10px;
+    }
+    .content{
+        font-size: 11px;
+    }
+}
