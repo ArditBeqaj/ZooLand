@@ -4,16 +4,10 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-.top{
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto; /* Center the logo horizontally */
-    text-align: center; /* Center the logo horizontally */
+.carousel-caption h1{
     z-index: 9999;
     color: white;
     font-size: 5rem;
-    background-color: hsla(0, 0%, 0%, 0.351);
 }
 
 .title{
