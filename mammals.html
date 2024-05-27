@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mammals</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="css/animal-card.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/carousel.css">
@@ -20,7 +20,7 @@
 
 <body>
 
-  <div id="slideshow" class="carousel slide" data-ride="carousel">
+  <!-- <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <h1 class="top">Fastest Mammal</h1>
@@ -39,11 +39,38 @@
         <img src="img/chimpanzee.jpg" class="d-block" alt="Slide 3" />
       </div>
     </div>
+  </div> -->
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="20000">
+        <img src="img/cheetah slider.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Fastest Mammal</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/blue whale.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Biggest Mammal</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/elephant slider.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Strongest Mammal</h1>       
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/chimpanzee.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Smartest Mammal</h1>       
+        </div>
+      </div>
+    </div>
   </div>
 
   <div id="welcome-header" class="hidden">Mammals</div>
-
-
 
   <div class="container">
     <div class="row">
@@ -83,12 +110,11 @@
       <!-- Elephant Section -->
 
       <!-- Cheetah Section -->
-
       <div class="col-md-12 mt-4" id="cheetah">
         <div class="card" style="background-color: #fcf7e9;">
           <h2 class="card-title cheetah text-center">Catch the Cheetah</h2>
           <audio id="cheetah-audio" src="video/Cheetah - Sound Effect  ProSounds.mp3"></audio>
-          <div class="card-body-cheetah ">
+          <div class="card-body-cheetah">
             <img src="img/cheetah.gif" alt="Cheetah" class="cheetah-animation active no-hover" style="width: 20%;">
             <img src="img/cheetah.webp" alt="Cheetah"
               style="width: 50%; height: auto; margin-right: 15px; border-radius: 15px; object-fit: cover;"
@@ -125,13 +151,12 @@
       </div>
       <!-- Zebra Section -->
 
-
-      <!-- Zebra Section -->
+      <!-- Giraffe Section -->
       <div class="col-md-6 mt-4" id="giraffe">
         <div class="card">
           <h2 class="card-title text-center">Giraffe</h2>
           <div class="card-body d-flex">
-            <img src="img/giraffe.jpg" alt="Zebra" class="imghov" onclick="playAudio('giraffe-audio')">
+            <img src="img/giraffe.jpg" alt="Giraffe" class="imghov" onclick="playAudio('giraffe-audio')">
             <audio id="giraffe-audio" src="video/Giraffe - Sound Effect  ProSounds.mp3"></audio>
             <div>
               <p>Giraffes are the tallest land animals, reaching up to 18 feet in height. They inhabit African savannas
@@ -141,22 +166,9 @@
           </div>
         </div>
       </div>
+      <!-- Giraffe Section -->
     </div>
-    <!-- Zebra Section -->
-
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
   <footer class="bg-body-tertiary text-center mt-5" style="background-color: rgba(0, 0, 0, 0.03)">
     <div class="container p-3 pb-0">
@@ -167,7 +179,7 @@
 
         <!-- Twitter -->
         <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: black" href="#!"
-          role="button"><i class="bi bi-twitter-x"></i></a>
+          role="button"><i class="bi bi-twitter-x"></i></a>     
 
         <!-- Google -->
         <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: black" href="#!"
