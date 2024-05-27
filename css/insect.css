@@ -228,7 +228,73 @@ body {
     background-position: center; /* Image will be centered */
 }
 
+@media (max-width:991px) {
+    .hexagon{
+        width: 180px; /* Adjusted width */
+        height: 200px; /* Adjusted height */
+    }
+    #honey{
+        margin-top: 40px;
+    }
+}
 
+@media (max-width:822px) {
+    .hexagon{
+        width: 150px; /* Adjusted width */
+        height: 170px; /* Adjusted height */
+    }
+    #honey{
+        margin-top: 40px;
+    }
+    
+}
+
+@media (max-width:767px) {
+
+    #hive{
+        margin-top: -15px;
+    }
+    .hexagon{
+        width: 130px; /* Adjusted width */
+        height: 150px; /* Adjusted height */
+    }
+    #honey{
+        margin-top: 40px;
+    }
+    .hexagon span{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:634px) {
+    .hexagon{
+        width: 120px; /* Adjusted width */
+        height: 140px; /* Adjusted height */
+    }
+    #honey{
+        margin-top: 40px;
+    }
+    
+}
+
+@media (max-width:597px) {
+    .hexagon{
+        width: 100px; /* Adjusted width */
+        height: 120px; /* Adjusted height */
+    }
+    #honey{
+        margin-top: 60px;
+    }
+    #flower{
+        margin-top: 20px;
+    }
+    @keyframes move-bee {
+        0% { left: 10%; top: 70%; } /* Start from the middle-left */
+        50% { left: 80%; top: 70%; } /* Move to the middle */
+        100% { left: 50%; top: 45%; } /* Move to the top */
+        }
+    
+}
 
 
 

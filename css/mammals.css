@@ -73,11 +73,8 @@ body {
     cursor: pointer;
     width: 10%;
 }
-/* .hidden {
-    display: none;
-} */
 .card-body-cheetah {
-    height: 300px;
+    height: 330px;
     display: flex;
     padding: 20px;
     position: relative;
@@ -112,6 +109,9 @@ body {
     .card-body p {
         font-size: 13px;
     }
+    .top{
+        font-size: 4rem;
+    }
 }
 @media (max-width:767px) {
     .card-body p {
@@ -120,9 +120,11 @@ body {
     .card-body-cheetah{
         margin-top: 10px;
     }
-
     .content{
         font-size: 13px;
+    }
+    .top{
+        font-size: 3rem;
     }
 }
 @media (max-width:476px) {
@@ -134,5 +136,8 @@ body {
     }
     .content{
         font-size: 11px;
+    }
+    .top{
+        font-size: 2rem;
     }
 }

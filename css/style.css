@@ -18,7 +18,7 @@ body{
 
 /* Adjust the size of the logo if needed */
 #logo-overlay img {
-  width: 8%; 
+  width: 15%; 
   max-width: 220px;
   height: auto;
 }
@@ -35,22 +35,29 @@ opacity: 1;
 
 /* Style for the welcome header */
 #welcome-header {
-font-size: 9vh;
+font-size: 10vh;
 color: #000000; /* Adjust the font color as needed */
 text-align: center;
-margin-top: 5%;
-transform: translateY(-50%);
+margin: 2%;
+
 }
 
-@media (max-width: 830px) {
+@media (max-width: 991px) {
   #welcome-header{
-    font-size: 5vh;
+    margin-top: 7%;
+    font-size: 9vh;
   }
   }
-@media (max-width: 430px) {
+@media (max-width: 767px) {
+  #welcome-header{
+    font-size: 7vh;
+  }
+  }  
+@media (max-width: 443px) {
   #welcome-header{
     font-size: 4vh;
   }
+ 
   }  
 
   

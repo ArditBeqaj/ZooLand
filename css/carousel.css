@@ -11,3 +11,14 @@
     position: relative;
     max-height: 30%;
   }
+
+@media (max-width:795px) {
+   .carousel-item img {
+    height: 300px;
+   }
+}
+@media (max-width:434px) {
+  .carousel-item img {
+    height: 200px;
+   }
+}

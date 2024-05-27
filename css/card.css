@@ -124,42 +124,60 @@ a:hover {
 /* Media query for responsive height */
 @media (max-width: 830px) {
     .card {
-      height: 300px; /* Decrease height for smaller screens */
-    }
-    .card-title{
-      font-size: 30px;
+      height: 400px; /* Decrease height for smaller screens */
     }
     .description {
-        font-size: 15px;
-        padding:10px ;
+        font-size: 13px;
+        padding:15px ;
       }
     }
     
-    @media (max-width: 740px) {
+@media (max-width: 740px) {
     .card {
-      height: 200px; /* Further decrease height for even smaller screens */
-    }
-    .card-title{
-      font-size: 20px;
+        height: 300px; /* Further decrease height for even smaller screens */
     }
     .description {
-      font-size: 10px;
-      padding:10px ;
+        font-size: 12px;
+        padding:10px ;
     }
-    .see-more-button, a{
-      padding: 5px 6px;
-      font-size: 9px;
-    }
-    }
-
-    @media (max-width: 430px) {
     .card-title{
-        font-size: 20px;
+        font-size: 45px;
         }
-    .description {
-    font-size: 9px;
-    padding: 4px ;
-    }
-    }
+    .see-more-button, a{
+        padding: 5px 6px;
+        font-size: 9px;
+}
+}
 
-    
+@media (max-width: 564px) {
+    .card{
+        height: 200px;
+    }
+    .description {
+        font-size: 8px;
+        padding: 10px;
+        }
+    .card-title{
+        font-size: 35px;
+        }
+    .see-more-button, a{
+    padding: 5px 6px;
+    font-size: 9px;
+    }
+}
+@media (max-width: 386px) {
+    .card{
+        height: 180px;
+    }
+    .description {
+        font-size: 7px;
+        padding: 7px;
+        }
+    .card-title{
+        font-size: 35px;
+        }
+    .see-more-button, a{
+    padding: 5px 6px;
+    font-size: 5px;
+    }
+    }
