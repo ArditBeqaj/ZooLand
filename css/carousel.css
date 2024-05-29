@@ -7,7 +7,7 @@
 }
 .caption{
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
@@ -15,6 +15,18 @@
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 4rem;
+  text-align: center;
+}
+.caption1{
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 1.5rem;
   text-align: center;
 }
 
