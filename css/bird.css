@@ -41,3 +41,36 @@ body {
 .card-body-crow .content {
     margin-left: 20px;
 }
+
+.crow-animation {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 10%;
+    animation: moveCrow 4s linear infinite;
+}
+
+@keyframes moveCrow {
+    0% {
+        left: 0;
+        top: 50%;
+    }
+    25% {
+        left: 200px;
+        top: 40%;
+    }
+    50% {
+        left: 400px;
+        top: 50%;
+    }
+    75% {
+        left: 600px;
+        top: 60%;
+    }
+    100% {
+        left: 800px;
+        top: 50%;
+    }
+}
