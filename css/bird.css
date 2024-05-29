@@ -54,7 +54,7 @@ body {
 
 @keyframes moveCrow {
     0% {
-        left: 0;
+        left: -100px;
         top: 50%;
     }
     25% {
