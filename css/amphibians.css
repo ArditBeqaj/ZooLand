@@ -1,0 +1,65 @@
+body {
+    background-color: #faf7df90;
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title{
+    font-size: 5rem;
+    background-color: rgba(0, 0, 0, 0.05)
+}
+
+.frog-animation {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 10%;
+    animation: jumpFrog 2s linear infinite;
+}
+
+@keyframes jumpFrog {
+    0% {
+        left: 0;
+        top: 50%;
+    }
+    25% {
+        left: 200px;
+        top: 40%;
+    }
+    50% {
+        left: 400px;
+        top: 60%;
+    }
+    75% {
+        left: 600px;
+        top: 40%;
+    }
+    100% {
+        left: 800px;
+        top: 50%;
+    }
+}
+
+.card-body-frog {
+    height: 330px;
+    display: flex;
+    padding: 20px;
+    position: relative;
+}
+
+.card-body-frog img,
+.card-body-frog .content {
+    display: none;
+}
+
+.card-body-frog img.active,
+.card-body-frog .content.active {
+    display: block;
+}
+
+.card-body-frog .content {
+    margin-left: 20px;
+}
