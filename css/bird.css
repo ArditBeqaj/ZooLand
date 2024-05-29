@@ -20,3 +20,24 @@ body {
     font-size: 5rem;
     background-color: rgba(0, 0, 0, 0.05)
 }
+
+.card-body-crow {
+    height: 330px;
+    display: flex;
+    padding: 20px;
+    position: relative;
+}
+
+.card-body-crow img,
+.card-body-crow .content {
+    display: none;
+}
+
+.card-body-crow img.active,
+.card-body-crow .content.active {
+    display: block;
+}
+
+.card-body-crow .content {
+    margin-left: 20px;
+}
