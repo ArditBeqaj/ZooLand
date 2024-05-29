@@ -114,37 +114,62 @@ body {
 
 @media (max-width:1669px) {
     .card-body img{
-        width: 40%;
+        width: 50%;
     }
     .card-body p {
         font-size: 16px;
     }
 }
 
-@media (max-width:1199px) {
+@media (max-width:1271px) {
     .card-body img{
-        width: 40%;
+        width: 50%;
     }
     .card-body p {
-        font-size: 16px;
+        font-size: 15px;
+    }
+}
+@media (max-width:1188px) {
+    .card-body img{
+        width: 55%;
+    }
+    .card-body p {
+        font-size: 13px;
+    }
+}
+@media (max-width:1056px) {
+    .card-body img{
+        width: 55%;
+    }
+    .card-body p {
+        font-size: 12px;
     }
 }
 
 @media (max-width:991px) {
 
     .card-body img{
-        width: 40%;
+        width: 50%;
     }
     .card-body p {
-        font-size: 13px;
-    }
-    .top{
-        font-size: 4rem;
+        font-size: 12px;
     }
 }
-@media (max-width:767px) {
+@media (max-width:860px) {
+
+    .card-body img{
+        width: 50%;
+    }
     .card-body p {
-        font-size: 16px;
+        font-size: 11px;
+    }
+}
+@media (max-width:811px) {
+    .card-body img{
+        width: 50%;
+    }
+    .card-body p {
+        font-size: 10.2px;
     }
     .card-body-cheetah{
         margin-top: 10px;
@@ -152,11 +177,31 @@ body {
     .content{
         font-size: 13px;
     }
-    .top{
-        font-size: 3rem;
+    
+}
+@media (max-width:768px) { 
+    .card-body p {
+        font-size: 18px;
+    }
+    .card-body-cheetah{
+        margin-top: 10px;
+    }
+    .content{
+        font-size: 11px;
     }
 }
-@media (max-width:476px) {
+@media (max-width:620px) {
+    .card-body p {
+        font-size: 16px;
+    }
+    .card-body-cheetah{
+        margin-top: 10px;
+    }
+    .content{
+        font-size: 11px;
+    }
+}
+@media (max-width:520px) {
     .card-body p {
         font-size: 13px;
     }
@@ -166,7 +211,15 @@ body {
     .content{
         font-size: 11px;
     }
-    .top{
-        font-size: 2rem;
+}
+@media (max-width:382px) {
+    .card-body p {
+        font-size: 11px;
+    }
+    .card-body-cheetah{
+        margin-top: 10px;
+    }
+    .content{
+        font-size: 11px;
     }
 }

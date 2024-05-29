@@ -44,7 +44,6 @@ margin: 2%;
 
 @media (max-width: 991px) {
   #welcome-header{
-    margin-top: 7%;
     font-size: 9vh;
   }
   }

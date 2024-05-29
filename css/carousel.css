@@ -77,15 +77,24 @@
   .slider img {
     height: 400px;
    }
+   .caption{
+    font-size: 3rem;
+   }
 }
 
 @media (max-width:795px) {
    .slider img {
     height: 300px;
    }
+   .caption{
+    font-size: 2rem;
+   }
 }
 @media (max-width:434px) {
   .slider img {
     height: 200px;
+   }
+   .caption{
+    font-size: 1rem;
    }
 }

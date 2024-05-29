@@ -132,7 +132,7 @@ a:hover {
       }
     }
     
-@media (max-width: 740px) {
+@media (max-width: 767px) {
     .card {
         height: 300px; /* Further decrease height for even smaller screens */
     }
