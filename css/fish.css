@@ -26,7 +26,7 @@ body {
     background-color: #fcf7e9; /* Neutral accent color */
 }
 .card img {
-    height: 420px;
+    height: 340px;
     border-radius: 15px;
     object-fit: cover;
     cursor: pointer;
