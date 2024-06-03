@@ -10,7 +10,7 @@ body {
     background-color: rgba(0, 0, 0, 0.05)
 }
 .card {
-    height: 400px;
+    height: 450px;
     border: none;
     border-radius: 15px;
     overflow: hidden;
