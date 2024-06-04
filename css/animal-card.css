@@ -41,8 +41,9 @@ body {
     
 }
 .card-body p {
-    font-size: 16px;
+    font-size: 100%;
     color: #6D4C41; /* Warm brown for better readability */
+    text-align: center;
 }
 .card-title {
     background-color: #c5955b85; /* Secondary accent color */
@@ -91,13 +92,16 @@ body {
 .card-body-cheetah {
     height: 330px;
     display: flex;
+    margin-top: 25px;    
     padding: 20px;
     position: relative;
+    text-align: center;
 }
 
 .card-body-cheetah img,
 .card-body-cheetah .content {
     display: none;
+    align-content: center;
 }
 
 .card-body-cheetah img.active,
@@ -117,11 +121,11 @@ body {
         width: 50%;
     }
     .card-body p {
-        font-size: 16px;
+        font-size: 17px;
     }
 }
 
-@media (max-width:1271px) {
+@media (max-width:1312px) {
     .card-body img{
         width: 50%;
     }

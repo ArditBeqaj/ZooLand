@@ -48,11 +48,14 @@ body {
     display: flex;
     padding: 20px;
     position: relative;
+    margin-top: 25px;
 }
 
 .card-body-frog img,
 .card-body-frog .content {
     display: none;
+    align-content: center;
+    text-align: center;
 }
 
 .card-body-frog img.active,
