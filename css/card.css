@@ -7,8 +7,10 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     width: 100%;
-    height: 400px; /* Fixed height for the card */
-    margin-bottom: 20px; /* Adjust vertical spacing between cards */
+    height: 400px;
+    /* Fixed height for the card */
+    margin-bottom: 20px;
+    /* Adjust vertical spacing between cards */
 }
 
 .card-img {
@@ -16,10 +18,12 @@
     height: 100%;
     overflow: hidden;
 }
+
 .card-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Make the image cover the entire space while maintaining aspect ratio */
+    object-fit: cover;
+    /* Make the image cover the entire space while maintaining aspect ratio */
     transition: filter 0.3s;
 }
 
@@ -27,7 +31,8 @@
     font-size: 70px;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.9);
-    }
+}
+
 .card-overlay {
     position: absolute;
     top: 0;
@@ -39,8 +44,8 @@
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s;
-    }
-    
+}
+
 .card-img img {
     width: 100%;
     height: 100%;
@@ -53,7 +58,8 @@
 }
 
 .card:hover .card-img img {
-    filter: blur(5px); /* Adjust the blur intensity as needed */
+    filter: blur(5px);
+    /* Adjust the blur intensity as needed */
 }
 
 .description {
@@ -70,6 +76,7 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+
 .card:hover .description {
     opacity: 1;
     transform: translateY(0);
@@ -80,30 +87,73 @@
     color: #000000;
 }
 
-.see-more-button, a {
-    padding: 10px 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 12px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.text-boxx {
+    margin-bottom: 40px;
 }
 
-.see-more-button {
-    background-color: #7E9871;
-    color: wheat;
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
 }
 
-.see-more-button:hover {
-    background-color: #FFFACD;
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-a {
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: black;
     color: white;
 }
 
-a:hover {
-    color: #000000;
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .initial-title {
@@ -118,66 +168,100 @@ a:hover {
 }
 
 .card:hover .initial-title {
-    top: 10%; /* Adjust this value for desired position */
+    top: 10%;
+    /* Adjust this value for desired position */
 }
 
 /* Media query for responsive height */
 @media (max-width: 830px) {
     .card {
-      height: 400px; /* Decrease height for smaller screens */
+        height: 400px;
+        /* Decrease height for smaller screens */
     }
+
     .description {
         font-size: 13px;
-        padding:15px ;
-      }
+        padding: 15px;
     }
-    
+}
+
 @media (max-width: 767px) {
     .card {
-        height: 300px; /* Further decrease height for even smaller screens */
+        height: 300px;
+        /* Further decrease height for even smaller screens */
     }
+
     .description {
         font-size: 12px;
-        padding:10px ;
+        padding: 10px;
     }
-    .card-title{
+
+    .card-title {
         font-size: 45px;
-        }
-    .see-more-button, a{
+    }
+
+    .btn,
+    a {
         padding: 5px 6px;
         font-size: 9px;
-}
+    }
+
+    .btn:link,
+    .btn:visited {
+
+        padding: 6px 25px;
+
+    }
 }
 
 @media (max-width: 564px) {
-    .card{
+    .card {
         height: 200px;
     }
+
     .description {
         font-size: 8px;
         padding: 10px;
-        }
-    .card-title{
+    }
+
+    .card-title {
         font-size: 35px;
-        }
-    .see-more-button, a{
-    padding: 5px 6px;
-    font-size: 9px;
+    }
+
+    .btn,
+    a {
+        font-size: 7px;
+    }
+
+    .btn:link,
+    .btn:visited {
+
+        padding: 6px 20px;
+
+    }
+
+    .text-boxx {
+        margin-bottom: 30px;
     }
 }
+
 @media (max-width: 386px) {
-    .card{
+    .card {
         height: 180px;
     }
+
     .description {
         font-size: 7px;
         padding: 7px;
-        }
-    .card-title{
+    }
+
+    .card-title {
         font-size: 35px;
-        }
-    .see-more-button, a{
-    padding: 5px 6px;
-    font-size: 5px;
     }
+
+    .see-more-button,
+    a {
+        padding: 5px 6px;
+        font-size: 5px;
     }
+}
