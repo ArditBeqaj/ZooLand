@@ -14,3 +14,14 @@ function toggleMedia(imageElement, videoSrc) {
         videoElement.replaceWith(imageElement);
     });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const initialImage = document.getElementById('initial-image');
+    const replacementImage = document.getElementById('replacement-image');
+
+    initialImage.addEventListener('click', () => {
+        alert("Gamble today is your lucky day");
+        initialImage.style.display = 'none';
+        replacementImage.style.display = 'block';
+    });
+});
