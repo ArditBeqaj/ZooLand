@@ -67,3 +67,70 @@ function isInViewport(element) {
   
   // Add scroll event listener
   window.addEventListener('scroll', handleScroll);
+
+
+
+
+//-------------------- PIXI.JS LOAD SCREEN ---------------------//
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('a.btn-animate');
+    const loadingScreen = document.getElementById('loadingScreen');
+
+    links.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();  // Prevent the default link behavior
+
+            const targetPage = link.getAttribute('href');
+            const imageUrl = link.getAttribute('data-image');
+
+            // Show loading screen
+            loadingScreen.style.display = 'flex';
+
+            // Create the PixiJS application
+            const app = new PIXI.Application({
+                width: window.innerWidth,
+                height: window.innerHeight,
+                backgroundColor: 0xfaf7df, // Background color without transparency
+                // PixiJS doesn't support RGBA directly in backgroundColor
+            });
+
+            // Clear previous PixiJS content if any
+            while (loadingScreen.firstChild) {
+                loadingScreen.removeChild(loadingScreen.firstChild);
+            }
+
+            // Append the application canvas to the loading screen div
+            loadingScreen.appendChild(app.view);
+
+            // Set the canvas background color with transparency using CSS
+            app.view.style.backgroundColor = 'rgba(250, 247, 223, 0.56)';
+
+            // Load the specific image for the clicked link
+            PIXI.Assets.load(imageUrl).then((texture) => {
+                const sprite = new PIXI.Sprite(texture);
+                
+                // Center the sprite's anchor point
+                sprite.anchor.set(0.5);
+                
+                // Move the sprite to the center of the screen
+                sprite.x = app.screen.width / 2;
+                sprite.y = app.screen.height / 2;
+                
+                // Add the sprite to the stage
+                app.stage.addChild(sprite);
+                
+                // Rotate the sprite
+                app.ticker.add((delta) => {
+                    sprite.rotation += 0.1 * delta;
+                });
+            });
+
+            // Wait for 3 seconds then navigate to the target page
+            setTimeout(() => {
+                window.location.href = targetPage;
+            }, 3000);
+        });
+    });
+});
+//-------------------- PIXI.JS LOAD SCREEN ---------------------//
