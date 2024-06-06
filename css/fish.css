@@ -28,9 +28,10 @@ body {
 }
 
 .card img {
-    height: 340px;
+    height: 300px;
     border-radius: 15px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .card-body p {
