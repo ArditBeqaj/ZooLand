@@ -122,14 +122,14 @@ function isInViewport(element) {
                 
                 // Rotate the sprite
                 app.ticker.add((delta) => {
-                    sprite.rotation += 0.1 * delta;
+                    sprite.rotation += 0.08 * delta;
                 });
             });
 
             // Wait for 3 seconds then navigate to the target page
             setTimeout(() => {
                 window.location.href = targetPage;
-            }, 3000);
+            }, 1500);
         });
     });
 });
