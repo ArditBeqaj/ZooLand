@@ -73,7 +73,7 @@ function isInViewport(element) {
 
 //-------------------- PIXI.JS LOAD SCREEN ---------------------//
 
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('a.btn-animate');
     const loadingScreen = document.getElementById('loadingScreen');
 
@@ -116,7 +116,11 @@ function isInViewport(element) {
                 // Move the sprite to the center of the screen
                 sprite.x = app.screen.width / 2;
                 sprite.y = app.screen.height / 2;
-                
+
+                // Set the size of the sprite (logo)
+                sprite.width = 300; // Desired width in pixels
+                sprite.height = 200; // Desired height in pixels
+
                 // Add the sprite to the stage
                 app.stage.addChild(sprite);
                 
@@ -133,4 +137,5 @@ function isInViewport(element) {
         });
     });
 });
+
 //-------------------- PIXI.JS LOAD SCREEN ---------------------//
