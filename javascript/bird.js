@@ -8,11 +8,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const crowImg = document.querySelector('.crow-img');
     const content = document.querySelector('.content');
     const cardTitle = document.querySelector('.crow');
+    const bg_crow = document.getElementById('bg-crow');
 
     crowAnimation.addEventListener('click', () => {
         crowAnimation.classList.remove('active');
         crowImg.classList.add('active');
         content.classList.add('active');
         cardTitle.textContent = "Crow";
+        bg_crow.style.backgroundImage = 'none';
     });
 });

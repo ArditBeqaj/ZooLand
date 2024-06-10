@@ -45,23 +45,23 @@ body {
 
 @keyframes moveCrow {
     0% {
-        left: -100px;
+        left: -10%;
         top: 50%;
     }
     25% {
-        left: 200px;
+        left: 20%;
         top: 40%;
     }
     50% {
-        left: 400px;
+        left: 40%;
         top: 50%;
     }
     75% {
-        left: 600px;
+        left: 60%x;
         top: 60%;
     }
     100% {
-        left: 800px;
+        left: 85%;
         top: 50%;
     }
 }
