@@ -25,18 +25,6 @@ body {
         left: 0;
         top: 50%;
     }
-    25% {
-        left: 200px;
-        top: 40%;
-    }
-    50% {
-        left: 400px;
-        top: 60%;
-    }
-    75% {
-        left: 600px;
-        top: 40%;
-    }
     100% {
         left: 800px;
         top: 50%;
