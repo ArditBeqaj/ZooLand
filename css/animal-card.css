@@ -29,7 +29,7 @@ body {
 .card-body {
     display: flex;
     padding: 20px;
-    background-color: #fcf7e9; /* Neutral accent color */
+    background-color: #ffffff; /* Neutral accent color */
 }
 .card-body img {
     border-radius: 15px;
@@ -42,8 +42,6 @@ body {
 }
 .card-body p {
     font-size: 100%;
-    color: #6D4C41; /* Warm brown for better readability */
-    text-align: center;
 }
 .card-title {
     background-color: #c5955b85; /* Secondary accent color */
@@ -59,7 +57,7 @@ body {
 .cheetah-animation {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 80%;
     transform: translateY(-50%);
     cursor: pointer;
     width: 10%;
@@ -68,24 +66,10 @@ body {
 
 @keyframes moveCheetah {
     0% {
-        left: 0;
-       
-    }
-    25% {
-        left: 200px;
- 
-    }
-    50% {
-        left: 400px;
- 
-    }
-    75% {
-        left: 600px;
-    
+        left: 0;    
     }
     100% {
-        left: 800px;
-
+        left: 80%;
     }
 }
 
