@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const replacementImage = document.getElementById('replacement-image');
 
     initialImage.addEventListener('click', () => {
-        alert("Gamble today is your lucky day");
+      
         initialImage.style.display = 'none';
         replacementImage.style.display = 'block';
     });

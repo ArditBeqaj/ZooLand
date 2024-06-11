@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const message = document.createElement('div');
             message.id = 'queen-warning';
-            message.textContent = "DONT TOUCH THE QUEEN, YOU MIGHT GET HURT";
+            message.textContent = "Don't touch the queen. You might get hurt!";
             message.style.fontFamily = '"Sriracha", cursive';
             message.style.fontSize = '2rem';
             message.style.color = '#ff0000';
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 cardTitle.style.visibility = 'visible';
             }, 3000);
         } else if (queenClickCount === 2) {
-            alert("I told you, go to hospital fast");
+            alert("I told you not to touch the queen Bee!");
             window.location.href = 'index.html';
         }
     });
