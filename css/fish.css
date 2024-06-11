@@ -86,3 +86,51 @@ body {
         left: 85%;
     }
 }
+@media (max-width:1170px) {
+    .card-title{
+        font-size: 2rem;
+    }
+    .card img {
+        height: 200px;
+    }
+    .card{
+        height: 500px;
+    }
+}
+@media (max-width:1015px) {
+    .card-body p {
+        font-size: 17px;
+    }
+
+}
+@media (max-width:824px) {
+    .card-title{
+        font-size: 1.5rem;
+    }
+    .card-body p {
+        font-size: 15px;
+    }
+}
+@media (max-width:768px) {
+    .card-title{
+        font-size: 3rem;
+    }
+    .card-body p {
+        font-size: 20px;
+    }
+    .card img {
+        height: 300px;
+    }
+    .card{
+        margin-bottom: 20px;
+        height: 570px;
+    }
+}
+@media (max-width:520px) {
+    .card-title{
+        font-size: 2rem;
+    }
+    .card-body p {
+        font-size: 17px;
+    }
+}
