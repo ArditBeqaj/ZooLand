@@ -16,5 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
         content.classList.add('active');
         cardTitle.textContent = "Crow";
         bg_crow.style.backgroundImage = 'none';
+        bg_crow.style.backgroundColor = 'white';
     });
 });

@@ -16,5 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
         content.classList.add('active');
         cardTitle.textContent = "Common Frog";
         bg_frog.style.backgroundImage = "none";
+        bg_frog.style.backgroundColor = 'white';
     });
 });

@@ -16,5 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
         content.classList.add('active');
         cardTitle.textContent = "Cheetah";
         bg_cheetah.style.backgroundImage = "none";
+        bg_cheetah.style.backgroundColor = 'white';
     });
 });
