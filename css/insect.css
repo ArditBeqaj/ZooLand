@@ -236,6 +236,9 @@ body {
     #honey{
         margin-top: 40px;
     }
+    #stick{
+        margin-top: 10px;
+    }
 }
 
 @media (max-width:822px) {
@@ -295,6 +298,17 @@ body {
         }
     
 }
+@media (max-width:384px) {
+    #hive{
+        margin-top: 2px;
+    }
+    #flower{
+        margin-top: 20px;
+    }
+    
+}
+
+
 
 
 
